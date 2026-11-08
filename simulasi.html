@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Angkasa HR · Rekrutmen</title>
+<link rel="stylesheet" href="style.css">
+<script src="workflow.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<header class="top"><div class="brand"><span class="logo" aria-hidden="true">↗</span><div>ANGKASA <b>HR</b><small>PEOPLE OPERATIONS</small></div></div><div class="sim-nav"><a href="index.html">← Beranda</a><span id="mode" class="badge">MODE DEMO</span></div></header>
+<main>
+<section class="intro"><div><span class="eyebrow">WORKSPACE / REKRUTMEN</span><h1>Pipeline rekrutmen</h1><p>Uji alur dengan data fiktif. Mode demo memakai aturan simulasi.</p></div><button class="primary" id="add">＋ Kandidat baru</button></section>
+<section class="stats" id="stats" aria-label="Ringkasan rekrutmen"></section>
+<div class="layout">
+<aside class="panel"><div class="panel-head"><h2>Kandidat</h2><button class="link" id="jobs">Kelola lowongan</button></div><label class="sr" for="search">Cari kandidat</label><input id="search" type="search" placeholder="Cari nama atau posisi"><nav id="list" aria-label="Daftar kandidat"></nav></aside>
+<section class="panel detail" id="detail" aria-label="Detail kandidat"></section>
+</div>
+<p class="foot">ANGKASA TOUR <span>·</span> HR WORKSPACE</p>
+</main>
+<dialog id="dialog"><form id="form"><div class="panel-head"><h2 id="dialog-title"></h2><button class="link" type="button" id="close" aria-label="Tutup">✕</button></div><div id="fields"></div><div class="actions"><button type="button" id="cancel">Batal</button><button class="primary" type="submit">Simpan</button></div><p class="error" id="error" role="alert"></p></form></dialog>
+<div id="notice" role="status"></div>
+</body>
+</html>
